@@ -1,8 +1,17 @@
+
+/* =========================
+   RESET
+========================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+
+/* =========================
+   BODY
+========================= */
 
 body{
     min-height:100vh;
@@ -19,11 +28,15 @@ body{
     #0f0e17;
 }
 
+/* =========================
+   CARD
+========================= */
+
 .card{
     position:relative;
 
     width:100%;
-    max-width:400px;
+    max-width:420px;
 
     background:rgba(36,20,66,.95);
 
@@ -48,17 +61,23 @@ body{
     0 0 40px rgba(139,92,246,.3);
 }
 
+/* =========================
+   NOTIFICACIÓN
+========================= */
+
 .card__notification{
     position:absolute;
+
     top:15px;
     right:15px;
 
-    width:28px;
-    height:28px;
+    width:30px;
+    height:30px;
 
     border-radius:50%;
 
     background:#ef4444;
+
     color:white;
 
     display:flex;
@@ -69,7 +88,13 @@ body{
     font-weight:bold;
 
     z-index:20;
+
+    box-shadow:0 0 15px rgba(239,68,68,.4);
 }
+
+/* =========================
+   IMAGEN
+========================= */
 
 .card__image{
     width:100%;
@@ -77,11 +102,15 @@ body{
     object-fit:cover;
 }
 
+/* =========================
+   AVATAR
+========================= */
+
 .card__avatar{
     position:absolute;
 
-    width:90px;
-    height:90px;
+    width:95px;
+    height:95px;
 
     object-fit:cover;
 
@@ -93,10 +122,17 @@ body{
     left:50%;
 
     transform:translateX(-50%);
+
+    box-shadow:
+    0 0 15px rgba(0,0,0,.3);
 }
 
+/* =========================
+   CONTENIDO
+========================= */
+
 .card__content{
-    padding:65px 25px 25px;
+    padding:70px 25px 25px;
 }
 
 .card__badge{
@@ -117,15 +153,24 @@ body{
 
 .card__title{
     color:white;
+
     margin-top:15px;
     margin-bottom:10px;
+
+    font-size:1.5rem;
 }
 
 .card__description{
     color:#c3b6db;
+
     line-height:1.6;
+
     margin-bottom:20px;
 }
+
+/* =========================
+   SKILLS
+========================= */
 
 .card__skills{
     display:flex;
@@ -145,7 +190,17 @@ body{
     border-radius:12px;
 
     font-size:.8rem;
+
+    transition:.3s;
 }
+
+.card__skills span:hover{
+    background:#6d28d9;
+}
+
+/* =========================
+   PROGRESO
+========================= */
 
 .card__progress-title{
     color:white;
@@ -184,6 +239,10 @@ body{
     margin-bottom:25px;
 }
 
+/* =========================
+   ESTADÍSTICAS
+========================= */
+
 .card__stats{
     display:flex;
     justify-content:space-between;
@@ -203,6 +262,10 @@ body{
     font-size:.8rem;
 }
 
+/* =========================
+   FOOTER
+========================= */
+
 .card__footer{
     background:rgba(255,255,255,.04);
 
@@ -219,15 +282,64 @@ body{
     margin-bottom:20px;
 }
 
+/* =========================
+   CONTACTO
+========================= */
+
+.card__contact{
+    margin:0 20px 20px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:14px;
+
+    padding:15px;
+}
+
+.card__contact-title{
+    color:white;
+
+    font-size:1rem;
+
+    margin-bottom:12px;
+}
+
+.card__contact-item{
+    color:#d8cfff;
+
+    padding:8px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    font-size:.9rem;
+}
+
+.card__contact-item:last-child{
+    border-bottom:none;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
 .card__actions{
     display:flex;
+
     gap:12px;
 
-    padding:0 25px 25px;
+    padding:0 20px 25px;
 }
 
 .btn{
     flex:1;
+
+    text-decoration:none;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
     padding:12px;
 
@@ -253,7 +365,10 @@ body{
 }
 
 .btn-primary:hover{
-    transform:translateY(-2px);
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 8px 20px rgba(139,92,246,.35);
 }
 
 .btn-secondary{
@@ -266,9 +381,19 @@ body{
 
 .btn-secondary:hover{
     background:rgba(109,40,217,.15);
+
+    transform:translateY(-3px);
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media(max-width:480px){
+
+    body{
+        padding:15px;
+    }
 
     .card{
         max-width:100%;
@@ -279,40 +404,16 @@ body{
     }
 
     .card__stats{
-        gap:15px;
+        gap:10px;
+    }
+
+    .card__title{
+        font-size:1.3rem;
+    }
+
+    .card__avatar{
+        width:85px;
+        height:85px;
     }
 }
 
-.card__contact{
-    margin-bottom:20px;
-
-    background:rgba(255,255,255,.04);
-
-    border:1px solid rgba(255,255,255,.06);
-
-    border-radius:14px;
-
-    padding:15px;
-}
-
-.card__contact-title{
-    color:#fff;
-
-    font-size:1rem;
-
-    margin-bottom:12px;
-}
-
-.card__contact-item{
-    color:#d8cfff;
-
-    padding:8px 0;
-
-    border-bottom:1px solid rgba(255,255,255,.05);
-
-    font-size:.9rem;
-}
-
-.card__contact-item:last-child{
-    border-bottom:none;
-}
