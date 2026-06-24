@@ -1,31 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card</title>
+    <title>Aprendiz ADSO</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="card">
+
+        <div class="card__notification">
+            3
+        </div>
+
         <img src="assets/img/tienes14.jpg" alt="" class="card__image">
 
-        <div class="card__content">
-            <span class="card__badge">SENA</span>
+        <img src="assets/img/tienes14.jpg" alt="" class="card__avatar">
 
-            <h2 class="card__content__title">
+        <div class="card__content">
+
+            <span class="card__badge">
+                🟢 Activo
+            </span>
+
+            <h2 class="card__title">
                 Aprendiz ADSO
             </h2>
 
-            <p class="card__content__description">
-                Los aprendices ADSO están al día con HTML, CSS, JavaScript y desarrollo web moderno.
+            <p class="card__description">
+                Formación en análisis, desarrollo de software,
+                bases de datos y tecnologías web modernas.
             </p>
+
+            <div class="card__skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+                <span>SQL</span>
+            </div>
+
+            <div class="card__progress-title">
+                Progreso académico
+            </div>
+
+            <div class="card__progress">
+                <div class="card__progress-bar"></div>
+            </div>
+
+            <p class="card__progress-text">
+                85% completado
+            </p>
+
+            <div class="card__stats">
+
+                <div class="stat">
+                    <h3>98%</h3>
+                    <span>Asistencia</span>
+                </div>
+
+                <div class="stat">
+                    <h3>4.8</h3>
+                    <span>Promedio</span>
+                </div>
+
+                <div class="stat">
+                    <h3>12</h3>
+                    <span>Proyectos</span>
+                </div>
+
+            </div>
+
+            <div class="card__footer">
+                🎓 Finalización: Noviembre 2026
+            </div>
+
+        </div>
+
+        <div class="card__contact">
+
+            <h3 class="card__contact-title">
+                📞 Información de contacto
+            </h3>
+
+            <div class="card__contact-item">
+                👤 Juan José Cañola Rendón
+            </div>
+
+            <div class="card__contact-item">
+                📱 313 529 7359
+            </div>
+
+            <div class="card__contact-item">
+                📍 Calatrava, Itagüí
+            </div>
+
         </div>
 
         <div class="card__actions">
-            <button class="card__button card__button--primary">Aceptar</button>
-            <button class="card__button card__button--secondary">Cancelar</button>
+            <button class="btn btn-primary">
+                Aceptar
+            </button>
+
+            <button class="btn btn-secondary">
+                Cancelar
+            </button>
         </div>
+
     </div>
+
 </body>
 </html>
