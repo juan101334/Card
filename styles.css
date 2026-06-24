@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0F0E17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 350px;
+    background-color: #241442;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card__content {
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-30px);
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card__content__title {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+.card__content__description {
+    font-size: 1em;
+    color: #C3B6DB;
+    line-height: 1.4;
+    margin: 0 0 15px 0;
+}
+
+.card__actions {
+    padding: 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card__button {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.card__button--primary {
+    background-color: #4C2A85;
+    color: #FFFFFF;
+}
+
+.card__button--primary:hover {
+    background-color: #6338AA;
+}
+
+.card__button--secondary {
+    background-color: #4C2A85;
+    color: #FFFFFF;
+}
+
+.card__button--secondary:hover {
+    background-color: #6338AA;
+}
+
+
